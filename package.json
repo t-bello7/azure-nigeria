@@ -10,7 +10,7 @@
   "scripts": {
     "start": "vite --host",
     "dev": "vite",
-    "test": "vitest",
+    "test": "vitest run",
     "build": "vite build",
     "preview": "vite preview",
     "fix:lint": "eslint . --fix",

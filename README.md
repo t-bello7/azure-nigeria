@@ -12,6 +12,7 @@ REQUIRED SECTIONS:
   - Built With
   - Live Demo
 - Major Dependencies
+- Resources
 - Getting Started
 - Authors
 - Future Features
@@ -121,7 +122,14 @@ After you're finished please remove all the comments and instructions!
 
 <!-- Resources -->
 ## Major Dependencies <a name="resources"></a>
-
+- https://codingpr.com/test-your-react-app-with-vitest-and-react-testing-library/
+- https://vitest.dev/guide/
+- https://www.behance.net/gallery/180021259/Conference-Events-Landing-Page?tracking_source=search_projects|tech+conference
+- https://www.framer.com/motion/introduction/
+- https://azurenigeria.community/home1/
+- https://azurenigeria.community/
+- https://grandconference.themegoods.com/v5/
+- https://www.youtube.com/watch?v=lfR2X-jsy8A&list=PL4cUxeGkcC9iHDnQfTHEVVceOEBsOf07i&index=2
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 <!-- GETTING STARTED -->
 
