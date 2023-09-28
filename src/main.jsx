@@ -1,9 +1,9 @@
 import React from "react";
 import ReactDOM from "react-dom/client";
 import { createBrowserRouter, RouterProvider } from "react-router-dom";
-import ErrorPage from "./pages/ErrorPage.jsx";
-import HomePage from "./pages/Home.jsx";
-import "./index.css";
+import ErrorPage from "./2023/pages/ErrorPage.jsx";
+import HomePage from "./2023/pages/Home.jsx";
+import "./main.css";
 const router = createBrowserRouter([
   {
     path: "/",
