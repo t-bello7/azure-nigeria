@@ -1,9 +1,9 @@
-import faceBookIcon from "../assets/icons/facebook-icon.svg";
-import instagramIcon from "../assets/icons/instagram-icon.svg";
-import linkedInIcon from "../assets/icons/linkedin-icon.svg";
+import faceBookIcon from "../assets/icons/twitter-icon.svg";
+import instagramIcon from "../assets/icons/twitter-icon.svg";
+import linkedInIcon from "../assets/icons/twitter-icon.svg";
 import twitterIcon from "../assets/icons/twitter-icon.svg";
-import callIcon from "../assets/icons/call-icon.svg";
-import locationIcon from "../assets/icons/location-icon.svg";
+import callIcon from "../assets/icons/twitter-icon.svg";
+import locationIcon from "../assets/icons/twitter-icon.svg";
 
 const FooterSection = () => {
   return (

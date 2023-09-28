@@ -1,7 +1,5 @@
 import React, { useState } from "react";
 import { Link, useNavigate } from "react-router-dom";
-import { gsap } from "gsap";
-import { ScrollToPlugin } from "gsap/ScrollToPlugin";
 import Button from "./atoms/Button";
 import MenuIcon from "../assets/icons/twitter-icon.svg";
 import CloseIcon from "../assets/icons/twitter-icon.svg";
@@ -19,11 +17,6 @@ const Navbar = ({ scrollRoutes }) => {
   const handleScroll = (event) => {
     setNavOpen(!navOpen);
     navigate("/");
-    gsap.registerPlugin(ScrollToPlugin);
-    gsap.to(window, {
-      duration: 1,
-      scrollTo: scrollRoutes[event.target.dataset.id].current,
-    });
   };
   return (
     <div
