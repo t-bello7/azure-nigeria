@@ -14,7 +14,8 @@
     "build": "vite build",
     "preview": "vite preview",
     "fix:lint": "eslint . --fix",
-    "fix:prettify": "prettier --write --ignore-path .gitignore ."
+    "fix:prettify": "prettier --write --ignore-path .gitignore .",
+    "prepare": "husky install"
   },
   "dependencies": {
     "antd": "^5.9.2",
@@ -44,7 +45,9 @@
     "eslint-plugin-react": "^7.33.2",
     "eslint-plugin-react-hooks": "^4.6.0",
     "eslint-plugin-react-refresh": "^0.4.3",
+    "husky": "^8.0.0",
     "jsdom": "^22.1.0",
+    "lint-staged": "^14.0.1",
     "postcss": "^8.4.28",
     "prettier": "^3.0.3",
     "prettier-plugin-tailwindcss": "^0.5.4",
