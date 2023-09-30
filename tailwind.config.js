@@ -5,17 +5,15 @@ export default {
   content: ["./index.html", "./src/**/*.{js,ts,jsx,tsx}"],
   theme: {
     extend: {
-      colors: {
-
-      },
+      colors: {},
       fontFamily: {
         clashDisplay: ["clash-display"],
         montserrat: ["montserrat"],
         unicaOne: ["unicaOne"],
       },
       backgroundImage: {
-        'jumbotronImg': "url(/src/2023/assets/imgs/jumbotron-bg.png)"
-      }
+        jumbotronImg: "url(/src/2023/assets/imgs/jumbotron-bg.png)",
+      },
     },
   },
   plugins: [],
