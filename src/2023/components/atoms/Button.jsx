@@ -18,7 +18,7 @@ const Button = ({
           <img
             src={iconPath}
             alt={`${name}-icon`}
-            className="hover:scale-125"
+            className={`hover:scale-125 w-4 aspect-square ${extraStyle}`}
           />
         </button>
       );

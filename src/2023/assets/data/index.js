@@ -27,7 +27,7 @@ const keyNoteSpeakers = [
     }
 ]
 
-const Organizers = [
+const organizers = [
     {
         name: 'David Okeyode'
     },
@@ -74,3 +74,9 @@ const Organizers = [
         phone_number: '+2348023037488'
     }
 ]
+
+export {
+    keyNoteSpeakers,
+    organizers,
+    aboutConference
+}

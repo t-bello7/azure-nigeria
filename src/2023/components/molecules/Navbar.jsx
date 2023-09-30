@@ -1,8 +1,8 @@
 import React, { useState } from "react";
 import { Link, useNavigate } from "react-router-dom";
-import Button from "./atoms/Button";
-import MenuIcon from "../assets/icons/twitter-icon.svg";
-import CloseIcon from "../assets/icons/twitter-icon.svg";
+import Button from "../atoms/Button";
+import MenuIcon from "../../assets/icons/menu.svg";
+import CloseIcon from "../../assets/icons/twitter-icon.svg";
 
 const navlinks = [
   {
@@ -20,13 +20,13 @@ const Navbar = ({ scrollRoutes }) => {
   };
   return (
     <div
-      className={`container fixed z-10 mx-auto flex items-center justify-between border-b border-b-lightPurple bg-transparent p-7 md:static 
+      className={`container transparent z-10 mx-auto flex items-center justify-between border-b border-b-lightPurple bg-transparent p-7 md:static 
                       md:max-w-[80%] md:border-b-gray100 md:p-7`}
     >
       <Link to="/">
         <div className="font-clashDisplay text-[20px] font-bold md:w-[50%]">
-          <span className="font-bold text-white">get</span>
-          <span className="text-lightPurple">linked</span>
+          <span className="font-bold">Azure</span>
+          <span className="text-lightPurple">Nigeria</span>
         </div>
       </Link>
       <Button

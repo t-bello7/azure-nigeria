@@ -1,11 +1,11 @@
-import faceBookIcon from "../assets/icons/twitter-icon.svg";
-import instagramIcon from "../assets/icons/twitter-icon.svg";
-import linkedInIcon from "../assets/icons/twitter-icon.svg";
-import twitterIcon from "../assets/icons/twitter-icon.svg";
-import callIcon from "../assets/icons/twitter-icon.svg";
-import locationIcon from "../assets/icons/twitter-icon.svg";
+import faceBookIcon from "../../assets/icons/twitter-icon.svg";
+import instagramIcon from "../../assets/icons/twitter-icon.svg";
+import linkedInIcon from "../../assets/icons/twitter-icon.svg";
+import twitterIcon from "../../assets/icons/twitter-icon.svg";
+import callIcon from "../../assets/icons/twitter-icon.svg";
+import locationIcon from "../../assets/icons/twitter-icon.svg";
 
-const FooterSection = () => {
+const Footer = () => {
   return (
     <div className="bg-darkBlue100 py-12">
       <div className="container mx-auto grid max-w-[80%] justify-items-start gap-8 py-4 font-montserrat md:grid-cols-4">
@@ -83,4 +83,4 @@ const FooterSection = () => {
   );
 };
 
-export default FooterSection;
+export default Footer;
