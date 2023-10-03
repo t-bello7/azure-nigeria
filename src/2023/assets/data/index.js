@@ -28,7 +28,7 @@ const keyNoteSpeakers = [
     name: "Scott Hanselman",
     role: "Partner PM",
     company: "Microsoft",
-    twitterProfile: "@shanselman",
+    twitterProfile: "shanselman",
     img: henkImg,
   },
   {
