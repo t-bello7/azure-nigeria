@@ -3,6 +3,7 @@ import Jumbotron from "../components/section/Jumbotron";
 import Info from "../components/section/Info";
 import Session from "../components/section/Session";
 import Speakers from "../components/section/Speakers";
+import Sponsors from "../components/section/Sponsors";
 import Organizers from "../components/section/Organizers";
 import Footer from "../components/section/Footer";
 
@@ -14,6 +15,7 @@ function Home() {
       <Info />
       <Session />
       <Speakers />
+      <Sponsors />
       <Organizers />
       <Footer />
     </div>

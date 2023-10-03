@@ -8,10 +8,10 @@ function SectionHeader({ heading, subHeading }) {
         {subHeading}
         {' '}
       </span>
-      <h1 className="font-clashDisplay text-2xl">
-        {' '}
+      <h1 className="font-clashDisplay text-2xl font-bold md:text-[32px]">
+        {" "}
         {heading}
-        {' '}
+        {" "}
       </h1>
       <hr className="bg-red w-[10%] border border-2 border-red-400" />
     </div>
