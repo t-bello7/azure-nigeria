@@ -6,7 +6,11 @@ function SpeakersCard({ speakerData }) {
   return (
     <div className="drop-shadow-2xl">
       <div className="relative">
-        <img src={speakerData?.img} alt="speakerImage" />
+        <img
+          src={speakerData?.img}
+          alt="speakerImage"
+          className="aspect-square w-[244px]"
+        />
         <div className="absolute bottom-0 left-[50%] translate-x-[-50%] bg-white p-1">
           {speakerData.twitterProfile ? (
             <a
@@ -68,7 +72,7 @@ SpeakersCard.propTypes = {
 
 SpeakersCard.defaultProps = {
   speakerData: {
-    img: "",
+    img: "https://picsum.photos/200/300",
     twitterProfile: "tbello",
     linkedinProfile: "tbello-7",
     role: "Software Developer",
