@@ -15,7 +15,7 @@ const Navbar = ({ scrollRoutes }) => {
   const navigate = useNavigate();
 
   const handleScroll = (event) => {
-    setNavOpen(!navOpen);
+    setNavOpen(!navOpen);~
     navigate("/");
   };
   return (
@@ -62,7 +62,7 @@ const Navbar = ({ scrollRoutes }) => {
             onClick={handleScroll}
           >
             {" "}
-            Overview{" "}
+            Over{" "}
           </li>
           <li className="mb-2 pb-2 pt-2" data-id="faq" onClick={handleScroll}>
             {" "}
