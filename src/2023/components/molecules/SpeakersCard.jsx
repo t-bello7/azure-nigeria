@@ -4,7 +4,7 @@ import twitterIcon from "../../assets/icons/twitter.svg";
 
 function SpeakersCard({ speakerData }) {
   return (
-    <div className="drop-shadow-2xl">
+    <div className="grid justify-items-center drop-shadow-2xl">
       <div className="relative">
         <img
           src={speakerData?.img}

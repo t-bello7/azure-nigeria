@@ -45,47 +45,60 @@ const keyNoteSpeakers = [
 
 const organizers = [
   {
+    id: uuidv4(),
     name: "David Okeyode",
   },
   {
+    id: uuidv4(),
     name: "Japhlet Nwamu",
   },
   {
+    id: uuidv4(),
     name: "Imoh Etuk",
   },
   {
+    id: uuidv4(),
     name: "Promise Nwachukwu",
   },
   {
+    id: uuidv4(),
     name: "Rapheal Gab-Momoh",
   },
   {
+    id: uuidv4(),
     name: "Joseph Roland",
   },
   {
+    id: uuidv4(),
     name: "Paul Oyemakinwa",
   },
   {
+    id: uuidv4(),
     name: "Oluwaseyi Oluwawumiju",
   },
   {
+    id: uuidv4(),
     name: "David Abu",
     role: "Cloud Advocate Power Bi",
     company: "Microsoft",
   },
   {
+    id: uuidv4(),
     name: "Oluwatosi (Tosin) Anishere",
     role: "Consultant",
   },
   {
+    id: uuidv4(),
     name: "Issa Rukayat Arinola",
     role: "Support Specialist",
   },
   {
+    id: uuidv4(),
     name: "Gbenga Oridupa",
     role: "Tech Consultant",
   },
   {
+    id: uuidv4(),
     name: "Ayodeji Folaring",
     phone_number: "+2348023037488",
   },
