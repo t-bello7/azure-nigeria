@@ -9,7 +9,7 @@ import Footer from "../components/section/Footer";
 
 function Home() {
   return (
-    <div className="relative overflow-scroll font-montserrat text-[12px] md:text-[14px]">
+    <div className="relative space-y-12 overflow-scroll font-montserrat text-[12px] md:text-[14px]">
       <Navbar />
       <Jumbotron />
       <Info />

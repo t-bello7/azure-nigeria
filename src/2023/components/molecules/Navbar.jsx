@@ -77,7 +77,7 @@ function Navbar() {
             </li>
           ))}
         </ul>
-        <Link to="/register">
+        <Link to="https://www.meetup.com/nigeria-microsoft-azure-meetup-group/">
           <Button name="Register" />
           {" "}
         </Link>

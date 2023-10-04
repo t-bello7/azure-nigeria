@@ -5,6 +5,7 @@ import olaImg from "../imgs/ola-williams.jpeg";
 import henkImg from "../imgs/henk-boolman.jpeg";
 import azureCommunityImg from "../imgs/azure-community.jpeg";
 import venturesImg from "../imgs/ventures.png";
+import clockImg from "../icons/time-clock.svg";
 
 const aboutConference = `Azure Nigeria Community conference is Africa’s largest community-driven Microsoft Cloud Technology event that brings together business leaders, IT experts, world-leading speakers, large customers, Microsoft partners, and thousands of delegates. It offers in-depth technical learning and an ideal professional networking environment for all attendees. The Azure Nigeria conference offers cutting-edge technology content, in both business and technology arenas, representing a perfect learning and professional opportunity. our attendees will get to learn from hundreds of educational sessions, dozens of real-life case studies, and panel discussions, delivered by 100+ world-class experts from across the world.`;
 
@@ -117,6 +118,64 @@ const sponsorsData = [
   },
 ];
 
+const schedule = [
+  {
+    id: uuidv4(),
+    date: "14 October",
+    schedule: [
+      {
+        id: uuidv4(),
+        startTime: "08:00",
+        endTime: "09:00",
+        speaker: "Kevin Chase",
+        title: "The Mordern Engineering Methods",
+        role: "Country Director(Nigeria and Ghana)",
+        company: "Microsoft",
+        img: davidImg,
+      },
+      {
+        id: uuidv4(),
+        startTime: "09:00",
+        endTime: "10:00",
+        speaker: "Kevin Chase",
+        title: "The Mordern Engineering Methods",
+        role: "Country Director(Nigeria and Ghana)",
+        company: "Microsoft",
+        img: davidImg,
+      },
+      {
+        id: uuidv4(),
+        startTime: "1000",
+        endTime: "09:00",
+        speaker: "Kevin Chase",
+        title: "The Mordern Engineering Methods",
+        role: "Country Director(Nigeria and Ghana)",
+        company: "Microsoft",
+        img: clockImg,
+      },
+      {
+        id: uuidv4(),
+        startTime: "09:00",
+        endTime: "10:00",
+        speaker: "Kevin Chase",
+        title: "The Mordern Engineering Methods",
+        role: "Country Director(Nigeria and Ghana)",
+        company: "Microsoft",
+        img: davidImg,
+      },
+      {
+        startTime: "09:00",
+        endTime: "10:00",
+        speaker: "Kevin Chase",
+        title: "The Mordern Engineering Methods",
+        role: "Country Director(Nigeria and Ghana)",
+        company: "Microsoft",
+        img: davidImg,
+      },
+    ],
+  },
+];
+
 export {
-  keyNoteSpeakers, organizers, aboutConference, sponsorsData
+  keyNoteSpeakers, organizers, aboutConference, sponsorsData, schedule
 };
