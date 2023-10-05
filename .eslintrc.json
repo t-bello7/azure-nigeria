@@ -23,6 +23,7 @@
       "quotes": "off",
       "no-param-reassign": "off",
       "linebreak-style": "off",
+      "max-len": "warn",
       "import/prefer-default-export": "off",
       "import/no-extraneous-dependencies": [
         "error",

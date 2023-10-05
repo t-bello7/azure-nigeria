@@ -1,26 +1,30 @@
-import Button from '../atoms/Button'
-const Jumbotron = () => {
-    return (
-        <div className="bg-jumbotronImg">        
-            <div className="container mx-auto max-w-[80%] h-[100vh] m-6 space rounded-xl flex flex-col justify-around items-center shadow-2xl p-9">
-            <h1 className="text-5xl font-[#adadad] text-center mt-[-20px]">
-            Innovative Possibilities in Africa with
-Artificial Intelligence| <span className='text-3xl '>27-28 October with over 50 sessions </span>
-            </h1>
-            <div>
-                <div>
-                    <p className='text-regular text-[22px]'>
-                        Lagos, Nigeria | 10am African Time
-                    </p>
-                </div>
-            </div>
-            <Button name='Get your tickets' className={`m-2`}/>
-        
-            </div>
-            </div>
-        
+import Button from "../atoms/Button";
 
-    )
+function Jumbotron() {
+  return (
+    <div className="bg-jumbotroImg">
+      <div className="space container m-6 mx-auto flex h-[60vh] max-w-[80%] flex-col items-center justify-around rounded-xl p-9 shadow-2xl">
+        <h1 className="mt-[-20px] text-center font-[#adadad] md:text-5xl">
+          Innovative Possibilities in Africa with Artificial Intelligence|
+          {" "}
+          <br />
+          {" "}
+          <span className="text-3xl ">
+            27-28 October with over 50 sessions
+            {" "}
+          </span>
+        </h1>
+        <div>
+          <div>
+            <p className="text-regular md:text-[22px]">
+              Lagos, Nigeria | 10am African Time
+            </p>
+          </div>
+        </div>
+        <Button name="Register" className="m-2" />
+      </div>
+    </div>
+  );
 }
 
 export default Jumbotron;
