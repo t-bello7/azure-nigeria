@@ -1,6 +1,6 @@
 const Info = () => {
     return (
-        <div className='container mx-auto max-w-[80%]'>
+        <div className='container mx-auto max-w-[80%] h-[100vh] m-6 space rounded-xl flex flex-col justify-around items-center shadow-2xl p-12'>
              <h2 className='text-4xl border-b-2 border-violet-900'> About the Conference </h2>
             <p className='text-2xl'>
 
@@ -10,16 +10,16 @@ const Info = () => {
             The Azure Nigeria conference offers cutting-edge technology content, in both business and technology arenas, representing a perfect learning and professional opportunity. our attendees will get to learn from hundreds of educational sessions, dozens of real-life case studies, and panel discussions, delivered by 100+ world-class experts from across the world.
             </p>
         
-        <h2>
+        <h2 className="text-2xl border-b-2 border-violet-900 ">
         Our Vision
         </h2>
-        <p>
+        <p className="text-xl">
         Our Vision is to build a community that encourages collaboration, and mentorship to enhance human capability in Azure technologies thereby empowering 2 million Nigerians in 5 years!
         </p>
-        <h2>
+        <h2 className="text-2xl border-b-2 border-violet-900 ">
             Our Mission
         </h2>
-        <p>
+        <p className="text-xl">
         To accelerate growth and empower 2 million Nigerians in Azure Cloud development, Cloud DevOps, Cloud Security, Blockchain, and Opensource in 5 years
         </p>
     </div>

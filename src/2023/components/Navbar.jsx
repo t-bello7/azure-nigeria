@@ -53,7 +53,7 @@ const Navbar = ({ scrollRoutes }) => {
             data-id="jumbotron"
             onClick={handleScroll}
           >
-            
+            </li>
             Home{" "}
           <li
             className="mb-2 pb-2 pt-2"
@@ -81,7 +81,7 @@ const Navbar = ({ scrollRoutes }) => {
           </li>
           <li
             className="mb-2 pb-2 pt-2"
-            data-id="organizers"
+            data-id="organizers~"
             onClick={handleScroll}
           >
             
@@ -118,6 +118,7 @@ const Navbar = ({ scrollRoutes }) => {
         </Link>
       </div>
     </div>
+    
   );
 };
 
