@@ -10,6 +10,26 @@ const navlinks = [
     url: "/pagetwo",
     name: "PageTwo",
   },
+  {
+    url: "/home",
+    name: "Home",
+  },
+  {
+    url: "/info",
+    name: "Info",
+  },
+  {
+    url: "/session",
+    name: "Session",
+  },
+  {
+    url: "/speakers",
+    name: "Speakers",
+  },
+  {
+    url: "/organizers",
+    name: "Organizers",
+  },
 ];
 
 function Navbar() {
@@ -23,7 +43,7 @@ function Navbar() {
   return (
     <div
       className={`transparent border-b-lightPurple md:border-b-gray100 container z-10 mx-auto flex items-center justify-between border-b bg-transparent p-7 
-                      md:static md:max-w-[80%] md:p-7`}
+                      md:static md:max-w-[80%] md:p-7 shadow-lg`}
     >
       <Link to="/">
         <div className="font-clashDisplay text-[20px] font-bold md:w-[50%]">
@@ -49,8 +69,8 @@ function Navbar() {
           onClick={() => setNavOpen(!navOpen)}
           extraStyle="float-right md:hidden"
         />
-        <ul className="my-12 h-fit md:my-0 md:flex md:gap-4">
-          <li className="mb-2 pb-2 pt-2">
+        <ul className="my-10 h-fit md:my-0 md:flex md:gap-4">
+          {/*<li className="mb-2 pb-2 pt-2">
             <button type="button" data-id="timeline" onClick={handleScroll}>
               {" "}
               Timeline
@@ -70,14 +90,14 @@ function Navbar() {
               FAQs
               {" "}
             </button>
-          </li>
+      </li>*/}
           {navlinks.map((item) => (
-            <li key={uuidv4()} className="mb-2 pb-2 pt-2 hover:text-slate-300">
+            <li key={uuidv4()} className="text-[16px] font-montserrat  font-medium hover:font-semibold p-[1px] hover:border-b-2 hover:border-violet-900 transition-all">
               <Link to={item.url}>{item.name}</Link>
             </li>
           ))}
         </ul>
-        <Link to="https://www.meetup.com/nigeria-microsoft-azure-meetup-group/">
+        <Link to="/register">
           <Button name="Register" />
           {" "}
         </Link>
