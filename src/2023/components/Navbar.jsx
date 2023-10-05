@@ -15,7 +15,7 @@ const Navbar = ({ scrollRoutes }) => {
   const navigate = useNavigate();
 
   const handleScroll = (event) => {
-    setNavOpen(!navOpen);~
+    setNavOpen(!navOpen);
     navigate("/");
   };
   return (
@@ -25,8 +25,8 @@ const Navbar = ({ scrollRoutes }) => {
     >
       <Link to="/">
         <div className="font-clashDisplay text-[20px] font-bold md:w-[50%]">
-          <span className="font-bold text-white">get</span>
-          <span className="text-lightPurple">linked</span>
+          <span className="font-bold text-white">Get</span>
+          <span className="text-lightPurple">Linked</span>
         </div>
       </Link>
       <Button
@@ -50,10 +50,49 @@ const Navbar = ({ scrollRoutes }) => {
         <ul className="my-12 h-fit md:my-0 md:flex md:gap-4">
           <li
             className="mb-2 pb-2 pt-2"
+            data-id="jumbotron"
+            onClick={handleScroll}
+          >
+            
+            Home{" "}
+          <li
+            className="mb-2 pb-2 pt-2"
+            data-id="info"
+            onClick={handleScroll}
+          >
+            
+            Info{" "}
+          </li>
+          <li
+            className="mb-2 pb-2 pt-2"
+            data-id="session"
+            onClick={handleScroll}
+          >
+            
+            Session{" "}
+          </li>
+          <li
+            className="mb-2 pb-2 pt-2"
+            data-id="speakers"
+            onClick={handleScroll}
+          >
+            
+            Speakers{" "}
+          </li>
+          <li
+            className="mb-2 pb-2 pt-2"
+            data-id="organizers"
+            onClick={handleScroll}
+          >
+            
+            Organizers{" "}
+          </li>
+          <li
+            className="mb-2 pb-2 pt-2"
             data-id="timeline"
             onClick={handleScroll}
           >
-            {" "}
+            
             Timeline{" "}
           </li>
           <li
@@ -61,11 +100,11 @@ const Navbar = ({ scrollRoutes }) => {
             data-id="overview"
             onClick={handleScroll}
           >
-            {" "}
-            Over{" "}
+            
+            Overview{" "}
           </li>
           <li className="mb-2 pb-2 pt-2" data-id="faq" onClick={handleScroll}>
-            {" "}
+            
             FAQs{" "}
           </li>
           {navlinks.map((item, index) => (
