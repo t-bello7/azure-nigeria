@@ -17,7 +17,7 @@ function Button({
           variants={variants}
           initial="initial"
           animate="animate"
-          className={`rounded-sm p-2 hover:border-[2px] hover:border-violet-800 md:hidden ${defaultStyle} ${extraStyle}`}
+          className={`rounded-sm p-2 md:hidden ${defaultStyle} ${extraStyle}`}
           onClick={onClick}
         >
           <img
@@ -34,7 +34,9 @@ function Button({
           variants={variants}
           initial="initial"
           animate="animate"
-          className={`rounded-md bg-primaryColor px-4 py-2 capitalize text-white hover:border-[2px] hover:border-violet-800  ${defaultStyle} ${extraStyle}`}
+          whileHover={{ scale: 1.05 }}
+          whileTap={{ scale: 0.95 }}
+          className={`rounded-md bg-primaryColor px-4 py-2 capitalize text-white hover:border-[2px] ${defaultStyle} ${extraStyle}`}
           onClick={onClick}
         >
           {name}
@@ -45,7 +47,7 @@ function Button({
 
 Button.propTypes = {
   name: PropTypes.string,
-  variants: PropTypes.string,
+  variants: PropTypes.shape({}),
   variant: PropTypes.string,
   iconPath: PropTypes.string,
   defaultStyle: PropTypes.string,
@@ -55,9 +57,9 @@ Button.propTypes = {
 
 Button.defaultProps = {
   name: "button",
-  variants: "",
+  variants: {},
   variant: "button",
-  iconPath: "not-fount",
+  iconPath: "not-found",
   onClick: () => {},
   defaultStyle: "cursor-pointer hover:outline",
   extraStyle: "",

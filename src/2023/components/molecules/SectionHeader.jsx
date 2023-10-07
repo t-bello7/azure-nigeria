@@ -13,7 +13,7 @@ function SectionHeader({ heading, subHeading }) {
         {heading}
         {" "}
       </h1>
-      <hr className="bg-red w-[10%] border border-2 border-red-400" />
+      <hr className="bg-red w-[10%] border border-2 border-primaryColor100" />
     </div>
   );
 }

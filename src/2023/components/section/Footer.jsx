@@ -2,7 +2,7 @@ import twitterIcon from "../../assets/icons/twitter.svg";
 
 function Footer() {
   return (
-    <div className="bg-black py-12 text-white">
+    <div className="bg-primaryColor py-12 text-white">
       <div className="container mx-auto grid max-w-[80%] justify-items-start gap-8 py-4 font-montserrat md:grid-cols-4">
         <div className="space-y-4 md:col-span-2">
           <h3 className="font-clashDisplay text-[20px] font-bold">

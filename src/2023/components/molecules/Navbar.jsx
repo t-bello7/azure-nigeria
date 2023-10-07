@@ -35,6 +35,8 @@ function Navbar() {
   return (
     <motion.div
       variants={stagger}
+      initial="initial"
+      animate="animate"
       className="transparent border-b-lightPurple md:border-b-gray100 z-10 mx-auto flex items-center justify-between border-b bg-transparent p-7 shadow-lg md:static md:p-7"
     >
       <Link to="/">

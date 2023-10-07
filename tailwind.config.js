@@ -7,7 +7,8 @@ export default {
     extend: {
       colors: {
         primaryColor: "#081786",
-        primaryColor100: "0071f2",
+        primaryColor100: "#0071f2",
+        primaryColor200: "#ADD8E6",
       },
       fontFamily: {
         clashDisplay: ["clash-display"],
