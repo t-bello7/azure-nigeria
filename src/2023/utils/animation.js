@@ -11,6 +11,42 @@ const stagger = {
   },
 };
 
+const header = {
+  initial: {
+    y: -60,
+    opacity: 0,
+    transition: {
+      duration: 0.8,
+      ease: easingOne,
+    },
+  },
+  animate: {
+    y: 0,
+    opacity: 1,
+    animation: {
+      duration: 0.6,
+      ease: easingOne,
+    },
+  },
+};
+
+const mobileLinks = {
+  initial: {
+    x: "30vw",
+    transition: {
+      duration: 0.5,
+      ease: easingTwo,
+    },
+  },
+  animate: {
+    x: 0,
+    transition: {
+      ease: easingTwo,
+      duration: 0.7,
+    },
+  },
+};
+
 const fadeInUp = {
   initial: {
     y: -60,
@@ -93,25 +129,13 @@ const btnGroup = {
   },
 };
 
-const header = {
-  initial: {
-    y: 60,
-    opacity: 0,
-    transition: {
-      duration: 0.8,
-      ease: easingOne,
-    },
-  },
-  animate: {
-    y: 0,
-    opacity: 1,
-    animation: {
-      duration: 0.6,
-      ease: easingOne,
-    },
-  },
-};
-
 export {
-  stagger, fadeInUp, firstName, lastName, letter, btnGroup, header
+  stagger,
+  fadeInUp,
+  firstName,
+  lastName,
+  letter,
+  btnGroup,
+  header,
+  mobileLinks,
 };

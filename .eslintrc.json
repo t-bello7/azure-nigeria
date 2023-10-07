@@ -24,6 +24,7 @@
       "no-param-reassign": "off",
       "linebreak-style": "off",
       "max-len": "warn",
+      "react/no-unknown-property": ["warn", { "ignore": ["variant, initial, animate"] }],
       "import/prefer-default-export": "off",
       "import/no-extraneous-dependencies": [
         "error",
