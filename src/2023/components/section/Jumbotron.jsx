@@ -1,4 +1,5 @@
 import { motion } from "framer-motion";
+import { Link } from "react-router-dom";
 import {
   firstName, letter, fadeInUp, btnGroup
 } from "../../utils/animation";
@@ -54,7 +55,9 @@ function Jumbotron() {
         >
           Lagos, Nigeria | 10am African Time
         </p>
-        <Button variants={btnGroup} name="Register" className="m-2" />
+        <Link to="https://www.meetup.com/nigeria-microsoft-azure-meetup-group/events/295095102/">
+          <Button variants={btnGroup} name="Register" className="m-2" />
+        </Link>
       </div>
       <motion.img
         src={conferenceSvg}

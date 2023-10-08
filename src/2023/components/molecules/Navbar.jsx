@@ -90,7 +90,7 @@ function Navbar() {
             </li>
           ))}
         </motion.ul>
-        <Link to="/register">
+        <Link to="https://www.meetup.com/nigeria-microsoft-azure-meetup-group/events/295095102/">
           <Button
             name="Register"
             variants={header}
