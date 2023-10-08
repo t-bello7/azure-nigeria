@@ -1,11 +1,44 @@
 import PropTypes from "prop-types";
+import { motion, easeInOut } from "framer-motion";
 import linkedinIcon from "../../assets/icons/linkedin.svg";
 import twitterIcon from "../../assets/icons/twitter.svg";
 
+const item = {
+  hidden: { opacity: 0, y: 20 },
+  show: {
+    opacity: 1,
+    y: 0,
+    transition: {
+      ease: easeInOut,
+      duration: 0.2,
+    },
+  },
+};
+
+const hoverEffect = {
+  whileHover: {
+    scale: 1.5,
+    rotate: 630,
+    borderRadius: "100%",
+  },
+  whileTap: {
+    scale: 0.8,
+    rotate: 630,
+    borderRadius: "100%",
+  },
+};
+
 function SpeakersCard({ speakerData }) {
   return (
-    <div className="grid justify-items-center drop-shadow-2xl">
-      <div className="relative">
+    <motion.div
+      variants={item}
+      className="grid justify-items-center drop-shadow-2xl"
+    >
+      <motion.div
+        variants={hoverEffect}
+        whileHover="whilehover"
+        className="relative"
+      >
         <img
           src={speakerData?.img}
           alt="speakerImage"
@@ -47,7 +80,7 @@ function SpeakersCard({ speakerData }) {
             ""
           )}
         </div>
-      </div>
+      </motion.div>
       <h3 className="text-center font-clashDisplay text-xl font-bold">
         {speakerData?.name}
       </h3>
@@ -55,7 +88,7 @@ function SpeakersCard({ speakerData }) {
       <h3 className="text-center font-clashDisplay text-xl font-bold">
         {speakerData?.company}
       </h3>
-    </div>
+    </motion.div>
   );
 }
 

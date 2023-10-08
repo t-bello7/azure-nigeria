@@ -62,7 +62,7 @@ function Navbar() {
         initial="initial"
         animate="animate"
         className={`absolute left-[50%] top-0 h-[100vh] h-[60vh] w-[90%] translate-x-[-50%] items-center space-x-2 rounded-lg p-12 transition ease-in ${
-          navOpen ? "bg-black text-white" : "translate-x-[100%]"
+          navOpen ? "bg-primaryColor text-white" : "translate-x-[100%]"
         }
                         md:static md:flex md:h-fit md:w-[50%] md:translate-x-0 md:justify-between md:p-0`}
       >
@@ -94,6 +94,7 @@ function Navbar() {
           <Button
             name="Register"
             variants={header}
+            extraStyle="bg-primaryColor100"
             initial="initial"
             animate="animate"
           />
