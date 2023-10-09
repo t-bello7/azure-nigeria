@@ -55,9 +55,9 @@ After you're finished please remove all the comments and instructions!
 
 <!-- PROJECT DESCRIPTION -->
 
-# 📖 [Azure Nigeria Community Landing Page ] <a name="about-project"></a>
+# 📖 Azure Nigeria Community Landing Page <a name="about-project"></a>
 
-**[Azure Nigeria Community Landing Page]** is the community website to display information about an up comming event, workshop and conference
+**Azure Nigeria Community Landing Page** is the community website to display information about an up comming event, workshop and conference
 
 ## 🛠 Built With <a name="built-with"></a>
 
@@ -177,9 +177,9 @@ To run tests, run the following command:
   yarn test
 ```
 
-### Deployment
+<!-- ### Deployment
 
-You can deploy this project using:
+You can deploy this project using: -->
 
 <!--
 Example:
@@ -224,7 +224,7 @@ Feel free to check the [issues page](../../issues/).
 
 ## ⭐️ Show your support <a name="support"></a>
 
-If you like this project...
+If you like this project leave a star.
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -244,13 +244,13 @@ FAQ (optional) -->
 
 > Add at least 2 questions new developers would ask when they decide to use your project.
 
-- **[What is the Structure of the Application ?]**
+- **What is the Structure of the Application ?**
 
-  - [What is the Structure of the Application ?]
+  - The project follows the atomic design principle
 
-- **[Why is my commit failing ?]**
+- **Why is my commit failing ?**
 
-  - [The application is configured to run the eslint and prettier check on the precommit stage. Read the errors properly and try to fix it]
+  - The application is configured to run the eslint and prettier check on the precommit stage. Read the errors properly and try to fix it.
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 

@@ -21,7 +21,7 @@ function Jumbotron() {
         duration: 0.3,
         ease: [0.6, -0.05, 0.01, 0.99],
       }}
-      className="container mx-auto my-8 grid h-[80vh] max-w-[90%] items-center rounded-xl bg-primaryColor200 px-4 md:grid-cols-2"
+      className="container mx-auto my-8 grid h-[80vh] max-w-[90%] items-center rounded-xl bg-primaryColor200 px-4 md:mt-8 md:grid-cols-2"
     >
       <div className="m-6  flex flex-col items-center justify-around space-y-3 rounded-xl p-9 shadow-2xl">
         <motion.h1 className="mt-[-20px] text-center md:text-5xl">

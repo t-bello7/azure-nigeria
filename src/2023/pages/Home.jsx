@@ -36,7 +36,7 @@ function Home() {
   return (
     <>
       {/* <div style={{ height: contentHeight }} /> */}
-      <div className="space-y-8">
+      <div className="space-y-24">
         <Navbar />
         <Jumbotron />
         <Info />

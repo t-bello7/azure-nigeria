@@ -37,7 +37,7 @@ function Navbar() {
       variants={stagger}
       initial="initial"
       animate="animate"
-      className="transparent border-b-lightPurple md:border-b-gray100 z-10 mx-auto flex items-center justify-between border-b bg-transparent p-7 shadow-lg md:static md:p-7"
+      className="border-b-lightPurple md:border-b-gray100 fixed top-0 z-10 mx-auto flex w-full items-center justify-between border-b bg-transparent p-7 shadow-lg md:static md:p-7"
     >
       <Link to="/">
         <motion.div
@@ -62,7 +62,7 @@ function Navbar() {
         initial="initial"
         animate="animate"
         className={`absolute left-[50%] top-0 h-[100vh] h-[60vh] w-[90%] translate-x-[-50%] items-center space-x-2 rounded-lg p-12 transition ease-in ${
-          navOpen ? "bg-primaryColor text-white" : "translate-x-[100%]"
+          navOpen ? "block bg-primaryColor text-white" : "translate-x-[100%]"
         }
                         md:static md:flex md:h-fit md:w-[50%] md:translate-x-0 md:justify-between md:p-0`}
       >
