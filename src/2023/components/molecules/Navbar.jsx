@@ -1,7 +1,7 @@
 import { v4 as uuidv4 } from "uuid";
 import React, { useState } from "react";
 import { Link } from "react-router-dom";
-import { motion } from "framer-motion";
+import { motion, useScroll, useMotionValueEvent } from "framer-motion";
 import { stagger, header, mobileLinks } from "../../utils/animation";
 import Button from "../atoms/Button";
 import MenuIcon from "../../assets/icons/menu.svg";
@@ -32,12 +32,34 @@ const navlinks = [
 
 function Navbar() {
   const [navOpen, setNavOpen] = useState(false);
+  const [hidden, setHidden] = useState(false);
+  const { scrollY } = useScroll();
+  // useEffect(() => {
+  //   const unsub = scrollY.on("change", (latest) => console.log(latest))
+
+  //   return ()=> unsub()
+  // }, [scrollY])
+
+  useMotionValueEvent(scrollY, "change", (latest) => {
+    const previous = scrollY.getPrevious();
+    if (latest > previous && latest > 150) {
+      setHidden(true);
+    } else {
+      setHidden(false);
+    }
+  });
   return (
     <motion.div
-      variants={stagger}
-      initial="initial"
-      animate="animate"
-      className="border-b-lightPurple md:border-b-gray100 fixed top-0 z-10 mx-auto flex w-full items-center justify-between border-b bg-transparent p-7 shadow-lg md:static md:p-7"
+      // variants={stagger}
+      variants={{
+        visible: { y: 0 },
+        hidden: { y: "-100%" },
+      }}
+      // initial="initial"
+      // animate="animate"
+      animate={hidden ? "hidden" : "visible"}
+      transition={{ duration: 0.35, ease: "easeInOut" }}
+      className="border-b-lightPurple md:border-b-gray100 fixed top-0 z-10 mx-auto flex w-full items-center justify-between border-b bg-white p-7 shadow-lg md:static md:p-7"
     >
       <Link to="/">
         <motion.div
